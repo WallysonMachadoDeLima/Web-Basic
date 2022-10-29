@@ -1,0 +1,15 @@
+@media screen and (max-width: 800px){
+    .columnA,
+    .columnB,
+    .columnC{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .columnA,
+    .columnB,
+    .columnC{
+        width: 100%;
+    }
+}

@@ -1,0 +1,16 @@
+/* CSS PRINCIAPL
+arquivo: principal.css
+*/
+
+body{
+  background-color: rgb(255, 255, 129);
+  background-repeat: no-repeat;
+  background-position: top 150px right 30px;
+  background-image: url(imagems/lince.png)
+}
+h1{
+  background-color: rgb(53, 148, 61);
+}
+p{
+  color: aqua;
+}

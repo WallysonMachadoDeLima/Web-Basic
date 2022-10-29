@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title> Formulário </title>
+
+    <script type="text/javascript">
+
+        function somarValores(){
+
+            var form = document.forms['calculo'];
+
+            var numero1 = parseFloat(form.numero1.value);
+            var numero2 = parseFloat(form.numero2.value);
+
+            var soma = numero1 + numero2;
+
+            document.getElementById('resultado').innerHTML = soma;
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <form name="calculo">
+        <p>
+            <label> Adicione aqui o - (1 Número):  </label>
+
+            <input type=text name="numero1">
+
+        </p>
+
+        <p>
+            <label> Adicione aqui o - (2 Número): </label>
+
+            <input type=text name="numero2">
+        </p>
+
+        <input type=button onClick="somarValores()" value="Somar">
+
+    </form>
+
+    <br/>
+
+    ⊷ . ⊷ | Resposta | ⊶ . ⊶ <h2 id="resultado"></h2> 
+
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpg" href="logo.ico" />
+    <title>Loja Wallyson Informática</title>
+    <meta name="Autor:" content="Wallyson Machado de Lima"/>
+    <meta name="description" content="Loja de Informática" />
+    <meta name="Keywords" content="Informática"/>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body background="imagens/FUNDO PAGE/PRODUTOS.png" class="fundoinicial"></body>
+  <body>
+    <header>
+      <nav>
+        <img id="logoimg"
+    src="LOGO.png"
+    width="55" 
+    vspace="55"
+    hspace="55" 
+    height="55"
+    >
+        <a class="logo" id="nomelogo">WALLYSON INFORMÁTICA |</a>
+        <div class="mobile-menu">   
+        </div>
+        <ul class="nav-list">
+          <li><a href="fale.html">Fale Conosco</a></li>
+          <li><a href="cadastro.html">Cadastrar</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li style="float:right"><a href="index.html" class="inicio">Início</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main></main>
+    <script src="mobile-navbar.js"></script>
+
+    <h1 style="color: aliceblue;">FALE CONOSCO</h1>
+    <form name="FALE" method="get" action="envio_mensagem.php"></form>
+      <fieldset>
+        <legend class="branco">Informações básicas para empresa</legend>
+        <br>
+        <p>
+            <label for="name" class="branco">Seu Nome: </label>
+            <input type="text" name="nome" id="nome" />
+        </p>
+        <br>
+        <p>
+          <label for="email" class="branco">Seu Telefone: </label>
+          <input type="text" name="telefone" id="imail">
+        </p>
+        <br>
+        <p>
+          <label for="email" class="branco">Seu E-mail: </label>
+          <input type="text" name="email" id="imail">
+        </p>
+        <br>
+        <strong class="branco">Deseja receber nossas novidades?</strong>
+        <dl>
+          <dd class="branco">
+            <input type="radio" name="recnovidades" value="sim" >Sim
+            <input type="radio" name="recnovidades" value="nao" >Não            
+          </dd>
+        </dl>
+        <br>
+        <p>
+          <strong class="branco">Digite seus comentários no campo abaixo</strong>
+            <dl>
+              <dd>
+                <textarea name="comentários" cols="42" rows="5"></textarea>
+              </dd>
+            </dl>
+        </p>
+        <br>
+        <p>
+          <dl>
+            <dd>
+              <input type="submit" value="Enviar dados">
+              <input type="reset" value="Limpar">
+            </dd>
+          </dl>
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>

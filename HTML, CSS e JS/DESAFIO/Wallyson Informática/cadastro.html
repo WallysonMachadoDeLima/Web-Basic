@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpg" href="logo.ico" />
+    <title>Loja Wallyson Informática</title>
+    <meta name="Autor:" content="Wallyson Machado de Lima"/>
+    <meta name="description" content="Loja de Informática" />
+    <meta name="Keywords" content="Informática"/>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body background="imagens/FUNDO PAGE/PRODUTOS.png" class="fundoinicial"></body>
+  <body>
+    <header>
+      <nav>
+        <img id="logoimg"
+    src="LOGO.png"
+    width="55" 
+    vspace="55"
+    hspace="55" 
+    height="55"
+    >
+        <a class="logo" id="nomelogo">WALLYSON INFORMÁTICA |</a>
+        <div class="mobile-menu">   
+        </div>
+        <ul class="nav-list">
+          <li><a href="fale.html">Fale Conosco</a></li>
+          <li><a href="cadastro.html">Cadastrar</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li style="float:right"><a href="index.html" class="inicio">Início</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main></main>
+    <script src="mobile-navbar.js"></script>
+
+    <h1 style="color: aliceblue;">CADASTRO DE CLIENTE</h1>
+    <form name="CADASTRO" method="post" action="dados_cadastro.php"></form>
+    <fieldset>
+      <legend style="color: aliceblue;">Dados pessoais</legend>
+      <br>\
+      <p class="espacamento">
+        <label style="color: aliceblue;" for="name"  id="nomecadas" >Nome: </label>
+        <input type="text" name="nome" id="nome"  class="espacamento" />
+        <label style="color: aliceblue;" for="sobrenome">         Sobrenome: </label>
+        <input type="text" name="sobrenome" id="sobrenome"  class="espacamento" />
+        <strong style="color: aliceblue;">Sexo</strong>
+          <select name="secao" size="1"  class="espacamento">
+            <option value="masculino">Masculino</option>
+              <option value="Feminino">Feminino</option>
+              <option value="Outro">Outro</option>
+          </select>
+          <strong style="color: aliceblue;" >Estado</strong>
+          <select id="estado" name="estado" class="espacamento">
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+                <option value="EX">Estrangeiro</option>
+          </select>
+        <label style="color: aliceblue;" for="numero">Numero: </label>
+        <input type="text" name="numero" id="numero" />
+      </p>
+      <br>
+      <p>
+        <label style="color: aliceblue;" for="endereco">Endereço: </label>
+        <input type="text" name="endereco" id="endereco"  class="espacamento" />
+        <label style="color: aliceblue;" for="endereco">CEP: </label>
+        <input type="text" name="cep" id="cep"  class="espacamento" />
+      </p>
+      <br>
+      <p>
+        <strong  style="color: aliceblue;" >O que você achou do site</strong>
+          <dl>
+            <dd class="branco">
+              <input type="radio" name="avaliacoes" value="muitobem" checked >Muito bom
+              <input type="radio" name="avaliacoes" value="bom" >Bom
+              <input type="radio" name="avaliacoes" value="regular" >Regular
+              <input type="radio" name="avaliacoes" value="umlixo" >Um lixo!            
+            </dd>
+          </dl>
+        <br>
+        <strong style="color: aliceblue;">Digite seus comentários no campo abaixo</strong>
+          <dl>
+            <dd>
+              <textarea name="comentários" cols="42" rows="5"></textarea>
+            </dd>
+          </dl>
+      </p>
+      <br>
+      <p>
+        <dl style="color: aliceblue;">
+          <dd>
+            <input type="checkbox" name="novidades" value="nov" >Quero receber novidades do site por e-mail.
+          </dd>
+          <dd>
+            <input type="checkbox" name="venderalma" value="nov">Desejo vender minha alma por 20 ponto.
+          </dd>
+          <dd>
+            <input type="checkbox" name="cookies" value="nov">Desejo aceitar os cookies.
+          </dd>
+          <dd>
+            <input type="checkbox" name="receberanuncios" value="nov">Desejo receber anúncios em casa.
+          </dd>
+        </dl>
+      </p>
+      <br>
+      <p>
+        <dl>
+          <dd>
+            <input type="submit" value="Enviar dados">
+            <input type="reset" value="Limpar formulário">
+          </dd>
+        </dl>
+      </p>
+    </fieldset>
+    </form>
+  </body>
+</html>
